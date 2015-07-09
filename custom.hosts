@@ -17,3 +17,7 @@ fe80::1%lo0 localhost
 0.0.0.0 www.dianomi.com
 0.0.0.0 sassets.vevo.com
 0.0.0.0 content.aimatch.com
+0.0.0.0 sportsbet.com.au
+0.0.0.0 tracking.sportsbet.com.au
+0.0.0.0 pubads.g.doubleclick.net
+127.0.0.1 login.spotilocal.com
