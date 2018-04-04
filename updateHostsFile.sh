@@ -15,7 +15,7 @@ function hostNameFromURL()
 }
 
 for site in ${EXTERNAL_HOSTS[@]}; do
-    curl "${site}" | grep -oE '^0.0.0.0 \S+' > "${DIR}/$(hostNameFromURL "${site}").hosts"
+    curl "${site}" | grep -oE '^0\.{3}0 \S+' > "${DIR}/$(hostNameFromURL "${site}").hosts"
 done
 
 cat "${DIR}/"*".hosts" | sort -u > /etc/hosts
