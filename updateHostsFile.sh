@@ -6,12 +6,12 @@ set -o errexit
 DIR="$(cd "$(dirname "$0")"; pwd)"
 
 EXTERNAL_HOSTS=(
-    'http://someonewhocares.org/hosts/zero/'
+    'https://someonewhocares.org/hosts/zero/'
 )
 
 function hostNameFromURL()
 {
-    sed -E 's/http:\/\/([^\/]+).+/\1/' <<< "$1"
+    sed -E 's/https:\/\/([^\/]+).+/\1/' <<< "$1"
 }
 
 for site in ${EXTERNAL_HOSTS[@]}; do
